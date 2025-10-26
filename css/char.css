@@ -1,0 +1,179 @@
+@font-face {
+    font-family: mojang;
+    src: url(../fonts/Mojang-Regular.ttf);
+}
+
+@keyframes float {
+        0%, 100%{
+            transform: translateY(15px);
+        }
+        50%{
+            transform: translateY(0px);
+        }
+}
+
+@keyframes fadeIn {
+        from {
+                opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+}
+
+body {
+        font-family: 'mojang';
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(201, 196, 218));
+        background-repeat: no-repeat;
+        word-spacing: 5PX;
+        height: 100%;
+        overflow: hidden;
+}
+
+.logo {
+        image-rendering: pixelated;
+}
+
+details {
+        transition: width 0.01s;
+        width: 50px;
+}
+
+.sidebar {
+        background: #1b2a3a;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0 0 10px #0005;
+        color: white;
+        position: fixed;
+        right: 10px;
+        z-index: 10;
+        transition: all 1s;
+        height: 90%;
+}
+
+.sidebar summary {
+        cursor: pointer;
+        padding: 10px 18px;
+        font-size: 20px;
+        float: right;
+        text-align: center;
+        list-style: none;
+}
+
+.sidebar summary:hover {
+        transform: scale(1.1);
+}
+
+.menu {
+        margin: 60px 0;
+        padding: 0 10px;
+        list-style: none;
+}
+
+.menu li {
+        padding: 10px;
+        margin: 5px 0;
+        text-align: center;
+        background: #243b55;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.2s;
+}
+
+.menu li:hover {
+    background: #325a85;
+}
+
+details[open] {
+    width: 200px;
+    animation: fadeIn 0.6s ease;
+}
+
+.menu li img {
+        width: 150px;
+        height: 120px;
+}
+
+.menu li a {
+        text-decoration: none;
+        color: aliceblue;
+}
+
+.minimap {
+        image-rendering: pixelated;
+}
+
+.intro-bg {
+        background: url(../img/intro-bg.jpg) no-repeat center center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        image-rendering: pixelated;
+}
+
+.char {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 556px;
+        image-rendering: pixelated;
+        z-index: 2;
+        animation: float 3s ease-in-out infinite;
+}
+
+.bubble {
+        position: absolute;
+        bottom: 200px;
+        left: 600px;
+        width: 200px;
+        height: 130px;
+        padding: 52px;
+        background: url(../img/bubble.png) no-repeat;
+        background-size: 100% 100%;
+        font-family: 'mojang', sans-serif;
+        color: rgb(62, 58, 52);
+        font-size: 16px;
+        line-height: 1.4;
+        text-align: center;
+        z-index: 3;
+        image-rendering: pixelated;
+        transform: scale(1.6);
+}
+
+.bubble p {
+        margin: auto;
+}
+
+.start-btn {
+        position: absolute;
+        bottom: -20px;
+        background: url(../img/buttonbg.png) no-repeat center center;
+        background-size: contain;
+        width: 120px;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+        image-rendering: pixelated;
+        z-index: 4;
+        padding: 40px 30px 60px 30px;
+        transition: transform 0.1s ease, filter 0.1s ease;
+        font-family: 'mojang';
+}
+
+.start-btn:hover {
+        transform: scale(1.05);
+        filter: brightness(1.2);
+}
+
+body {
+        opacity: 1;
+        transition: opacity 0.8s ease;
+}
