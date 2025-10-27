@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Pariwisata di Indonesia</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <title>Wisata Indonesia | Tugas Akhir SMAN 3 Bandung</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="img/logo.png" type="image/x-icon">
 </head>
@@ -15,9 +17,21 @@
         <nav>
             <ul>
                 <li><a href="#">Beranda</a></li>
-                <li><a href="#">Kuliner</a></li>
-                <li><a href="#">Wisata</a></li>
-                <li><a href="#">Tentang</a></li>
+                <li><a href="#">Kuliner</a>
+                    <ul>
+                        <li><a href="kulinerjkt.html">Kuliner Jakarta</a></li>
+                        <li><a href="kulinerbdg.html">Kuliner Bandung</a></li>
+                        <li><a href="kulinerbali.html">Kuliner Bali</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Wisata</a>
+                    <ul>
+                        <li><a href="wisatajkt.html">Wisata Jakarta</a></li>
+                        <li><a href="wisatabdg.html">Wisata Bandung</a></li>
+                        <li><a href="wisatabali.html">Wisata Bali</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">Tentang</a></li>
             </ul>
         </nav>
     </header>  
@@ -32,14 +46,54 @@
         </ul>
     </details>
 
-    <div class="banner">
-        <h1>Website Pariwisata Indonesia</h1>
-        <h3>Minigame!</h3>
-        <button class="game"><a href="char.html">Mulai!</a></button>
-    </div>
-    
+    <main>
+
+        <div class="banner">
+            <h1>Website Pariwisata Indonesia</h1>
+            <h3>Jelajahi Keindahan Indonesia!!</h3>
+            <a class="game" href="char.html">Mulai!</a>
+        </div>
+        
+        <section>
+            <h2 class="tentangindo">Tentang Indonesia</h2>
+            <p class="tentangindo">Indonesia memiliki keindahan alam, budaya, dan kuliner yang kaya. Jelajahi berbagai destinasi seru di pulau Jawa!</p>
+
+            <div class="tempatcard">
+                <div class="card">
+                    <div class="gallery">
+                        <img src="img/fotojktmain.png">
+                        <img src="img/fotojkt1.jpg">
+                        <img src="img/fotojkt2.jpg">
+                        <img src="img/fotojkt3.jpg">
+                    </div>
+                    <h3>Jakarta</h3>
+                    <a href="jkt.html">Lihat</a>
+                </div>
+                <div class="card">
+                    <div class="gallery">
+                        <img src="img/fotobdgmain.png">
+                        <img src="img/fotobdg1.jpg">
+                        <img src="img/fotobdg2.jpg">
+                        <img src="img/fotobdg3.jpg">
+                    </div>
+                    <h3>Bandung</h3>
+                    <a href="bdg.html">Lihat</a>
+                </div>
+                <div class="card">
+                    <div class="gallery">
+                        <img src="img/fotobalimain.png">
+                        <img src="img/fotobali1.jpg">
+                        <img src="img/fotobali2.jpg">
+                        <img src="img/fotobali3.jpg">
+                    </div>
+                    <h3>Bali</h3>
+                    <a href="bali.html">Lihat</a>
+                </div>
+            </div>
+        </section>
 
 
+    </main>
 
     <aside>
         <h3>Informasi Tambahan</h3>
