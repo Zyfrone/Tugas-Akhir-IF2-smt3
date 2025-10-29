@@ -1,424 +1,420 @@
 @font-face {
-  font-family: mojang;
-  src: url(../fonts/Mojang-Regular.ttf);
+    font-family: mojang;
+    src: url(../fonts/Mojang-Regular.ttf);
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(15px); }
-  50% { transform: translateY(0px); }
-}
+
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 @keyframes fadeimg {
-        0% { background-image: url('../img/bannermain.jpg'); }
-        7.69% { background-image: url('../img/banner1.jpg'); }
-        15.38% { background-image: url('../img/banner2.jpg'); }
-        23.07% { background-image: url('../img/banner3.jpg'); }
-        30.76% { background-image: url('../img/banner3.jpg'); }
-        38.45% { background-image: url('../img/banner4.jpg'); }
-        46.14% { background-image: url('../img/banner5.jpg'); }
-        53.83% { background-image: url('../img/banner6.jpg'); }
-        61.52% { background-image: url('../img/banner7.jpg'); }
-        69.21% { background-image: url('../img/banner8.jpg'); }
-        76.9% { background-image: url('../img/banner9.jpg'); }
-        84.59% { background-image: url('../img/banner10.jpg'); }
-        92.28% { background-image: url('../img/banner11.jpg'); }
-        100% { background-image: url('../img/banner12.jpg'); }
+    0% { background-image: url('../img/bannermain.jpg'); }
+    7.69% { background-image: url('../img/banner1.jpg'); }
+    15.38% { background-image: url('../img/banner2.jpg'); }
+    23.07% { background-image: url('../img/banner3.jpg'); }
+    30.76% { background-image: url('../img/banner3.jpg'); }
+    38.45% { background-image: url('../img/banner4.jpg'); }
+    46.14% { background-image: url('../img/banner5.jpg'); }
+    53.83% { background-image: url('../img/banner6.jpg'); }
+    61.52% { background-image: url('../img/banner7.jpg'); }
+    69.21% { background-image: url('../img/banner8.jpg'); }
+    76.9% { background-image: url('../img/banner9.jpg'); }
+    84.59% { background-image: url('../img/banner10.jpg'); }
+    92.28% { background-image: url('../img/banner11.jpg'); }
+    100% { background-image: url('../img/banner12.jpg'); }
 }
 
 
 :root {
-  --hitam: #111618;
-  --abugelap: #2C323A;
-  --putihsoft: #F2F5F8;
-  --birutua: #0a2434;
-  --biru: #13344b;
-  --abu: #96A1B0;
-  --abuterang: #e1e4ec;
-  --abubiasa: #3c414e;
-  --hitamterang: #22292c;
+    --hitam: #111618;
+    --abugelap: #2C323A;
+    --putihsoft: #F2F5F8;
+    --birutua: #0a2434;
+    --biru: #13344b;
+    --abu: #96A1B0;
+    --abuterang: #e1e4ec;
+    --abubiasa: #3c414e;
+    --hitamterang: #22292c;
 
-  /* === Default (Light Theme) === */
-  --bg: var(--putihsoft);
-  --text: var(--hitam);
-  --header-bg: var(--birutua);
-  --nav-bg: var(--biru);
-  --sidebar-bg: var(--hitam);
-  --button-bg: var(--biru);
-  --button-text: var(--hitam);
-  --sect-bg: var(--abuterang);
-  --shadow: var(--abugelap);
-  /* === Default (Light Theme) === */
+    /* === Default (Light Theme) === */
+    --bg: var(--putihsoft);
+    --text: var(--hitam);
+    --header-bg: var(--birutua);
+    --nav-bg: var(--biru);
+    --sidebar-bg: var(--hitam);
+    --button-bg: var(--biru);
+    --button-text: var(--hitam);
+    --sect-bg: var(--abuterang);
+    --shadow: var(--abugelap);
+    /* === Default (Light Theme) === */
 }
 
 /* ===================== DARK THEME ===================== */
 [data-theme="dark"] {
-  --bg: var(--hitam);
-  --text: var(--putihsoft);
-  --header-bg: var(--birutua);
-  --nav-bg: var(--birutua);
-  --sidebar-bg: var(--hitam);
-  --button-bg: var(--abu);
-  --button-text: var(--hitam);
-  --sect-bg: var(--hitamterang);
-  --shadow: var(--abu) ;
+    --bg: var(--hitam);
+    --text: var(--putihsoft);
+    --header-bg: var(--birutua);
+    --nav-bg: var(--birutua);
+    --sidebar-bg: var(--hitam);
+    --button-bg: var(--abu);
+    --button-text: var(--hitam);
+    --sect-bg: var(--hitamterang);
+    --shadow: var(--abu) ;
 }
 /* ===================== DARK THEME ===================== */
 
 body {
-  font-family: 'mojang';
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background: var(--bg);
-  background-repeat: no-repeat;
-  word-spacing: 5px;
-  color: var(--text);
-  height: 100%;
-  transition: background 0.6s ease, color 0.6s ease;
+    font-family: 'mojang';
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: var(--bg);
+    background-repeat: no-repeat;
+    word-spacing: 5px;
+    color: var(--text);
+    height: 100%;
+    transition: background 0.6s ease, color 0.6s ease;
 }
 
 header {
-  background: var(--header-bg);
-  color: var(--putihsoft);
-  padding: 20px;
-  text-align: left;
-  display: flex;
-  z-index: 2;
-  position: fixed;
-  opacity: 0.9;
-  width: 100%;
+    background: var(--header-bg);
+    color: var(--putihsoft);
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    z-index: 2;
+    position: fixed;
+    opacity: 0.9;
+    width: 100%;
 }
 
 header img {
-  width: 90px;
-  margin-right: 15px;
+    width: 90px;
+    margin-right: 15px;
 }
 
 .logo {
-  image-rendering: pixelated;
+    image-rendering: pixelated;
 }
 
 nav {
-  height: min-content;
-  float: right;
-  margin: auto;
-  margin-right: 28px;
+    height: min-content;
+    float: right;
+    margin: auto;
+    margin-right: 28px;
 }
 
 nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-  position: relative;
-  margin: 4px;
+    position: relative;
+    margin: 4px;
 }
 
 nav ul li a {
-  color: var(--putihsoft);
-  text-decoration: none;
-  font-weight: bold;
-  padding: 8px 12px;
-  display: block;
+    color: var(--putihsoft);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    display: block;
 }
 
 nav ul li a:hover {
-  background: var(--biru);
-  border-radius: 5px;
-  transition: all 0.3s;
+    background: var(--biru);
+    border-radius: 5px;
+    transition: all 0.3s;
 }
 
 nav ul li ul {
-  display: none;
-  position: absolute;
-  top: 35px;
-  left: 0;
-  background: var(--nav-bg);
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  border-radius: 5px;
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: var(--nav-bg);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
 }
 
 nav ul li ul li {
-  margin: 0;
-  width: 150px;
+    margin: 0;
+    width: 150px;
 }
 
 nav ul li ul li a {
-  padding: 10px;
-  font-weight: normal;
+    padding: 10px;
+    font-weight: normal;
 }
 
 nav ul li ul li a:hover {
-  background: #FFFFFF;
-  color: #000000;
+    background: #FFFFFF;
+    color: #000000;
 }
 
 nav ul li:hover ul {
-  display: block;
+    display: block;
 }
 
 details {
-  transition: width 0.01s;
-  width: 50px;
+    transition: width 0.01s;
+    width: 50px;
 }
 
 .sidebar {
-  background: var(--sidebar-bg);
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 0 10px #00000050;
-  color: var(--putihsoft);
-  position: fixed;
-  top: 150px;
-  right: 10px;
-  z-index: 10;
-  transition: all 1s;
-  height: fit-content;
+    background: var(--sidebar-bg);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px #00000050;
+    color: var(--putihsoft);
+    position: fixed;
+    top: 150px;
+    right: 10px;
+    z-index: 10;
+    transition: all 1s;
+    height: fit-content;
 }
 
 .sidebar summary {
-  cursor: pointer;
-  padding: 10px 18px;
-  font-size: 20px;
-  float: right;
-  text-align: center;
-  list-style: none;
+    cursor: pointer;
+    padding: 10px 18px;
+    font-size: 20px;
+    float: right;
+    text-align: center;
+    list-style: none;
 }
 
 .sidebar summary:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 details[open] {
-  width: 200px;
-  animation: fadeIn 0.6s ease;
+    width: 200px;
+    animation: fadeIn 0.6s ease;
 }
 
 /* ===================== TOGGLE THEME BUTTON ===================== */
 .toggletheme {
-  background: var(--putihsoft);
-  color: var(--button-text);
-  border: none;
-  border-radius: 8px;
-  padding: 8px 14px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-top: 15px;
-  width: 100%;
-  text-align: center;
-  font-family: 'mojang';
+    background: var(--putihsoft);
+    color: var(--button-text);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+    font-family: 'mojang';
 }
 
 .toggletheme:hover {
-  background: var(--abu);
-  color: var(--hitam);
+    background: var(--abu);
+    color: var(--hitam);
 }
 /* ===================== TOGGLE THEME BUTTON ===================== */
 
 .menu {
-  margin: 60px 0;
-  padding: 0 10px;
-  list-style: none;
+    margin: 60px 0;
+    padding: 0 10px;
+    list-style: none;
 }
 
 .menu li {
-  padding: 10px;
-  margin: 5px 0;
-  text-align: center;
-  background: #2C323A;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.2s;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: center;
+    background: #2C323A;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .menu li:hover {
-  background: #3E98CC;
+    background: #3E98CC;
 }
 
 .menu li img {
-  width: 150px;
-  height: 120px;
+    width: 150px;
+    height: 120px;
 }
 
 .menu li a {
-  text-decoration: none;
-  color: var(--putihsoft);
+    text-decoration: none;
+    color: var(--putihsoft);
 }
 
 .banner {
-  position: relative;
-  width: 100%;
-  height: 550px;
-  overflow: hidden;
-  text-align: center;
-  color: var(--putihsoft);
-  padding: 0;
-  margin: 0;
+    position: relative;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    text-align: center;
+    color: var(--putihsoft);
+    padding: 0;
+    margin: 0;
 }
 
 .bg {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  transition: opacity 1s ease-in-out;
-  opacity: 0;
-  z-index: -1;
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    z-index: -1;
 }
 
 .bg1 { opacity: 1; }
 .bg2 { opacity: 0; }
 
 .banner h1 {
-  position: relative;
-  padding-top: 150px;
-  margin: 20px;
+    position: relative;
+    padding-top: 150px;
+    margin: 20px;
 }
 
 .banner h3 {
-  position: relative;
-  margin: 20px;
-  padding-bottom: 55px;
+    position: relative;
+    margin: 20px;
+    padding-bottom: 55px;
 }
 
 .game {
-  position: relative;
-  display: inline-block;
-  padding: 5px 15px;
-  background-color: #FFFFFF;
-  color: #000000;
-  text-decoration: none;
-  border: 2px solid;
-  border-radius: 10px;
-  font-size: 20px;
-  font-family: 'mojang';
-  transition: all 0.2s ease;
+    position: relative;
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #FFFFFF;
+    color: #000000;
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'mojang';
+    transition: all 0.2s ease;
 }
 
 .game:hover {
-  transform: scale(1.2);
-  border-color: #FFFFFF;
-  background-color: var(--hitam);
-  color: #FFFFFF;
-  box-shadow: #FFFFFF 3px 3px 20px;
+    transform: scale(1.2);
+    border-color: #FFFFFF;
+    background-color: var(--hitam);
+    color: #FFFFFF;
+    box-shadow: #FFFFFF 3px 3px 20px;
 }
 
 .tentangindo {
-  text-align: center;
-  margin: 20px;
+    text-align: center;
+    margin: 20px;
 }
 
 .minimap {
-  image-rendering: pixelated;
+    image-rendering: pixelated;
 }
 
 .gallery {
-  position: relative;
-  width: 90%;
-  margin: auto;
-  margin-top: 6px;
-  max-width: 600px;
-  aspect-ratio: 9 / 10;
+    position: relative;
+    width: 90%;
+    margin: auto;
+    margin-top: 6px;
+    max-width: 600px;
+    aspect-ratio: 9 / 10;
 }
 
 .gallery img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  border-radius: 8px;
-  transition: opacity 1s ease;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    border-radius: 8px;
+    transition: opacity 1s ease;
 }
 
 .gallery img:first-child {
-  opacity: 1;
+    opacity: 1;
 }
 
 .card {
-  margin: 30px;
-  border: 2px solid var(--abu);
-  width: 80%;
-  box-shadow: var(--shadow) 1px 1px 10px;
-  border-radius: 12px;
-  padding: 8px;
-  background-color: var(--sect-bg);
+    margin: 30px;
+    border: 2px solid var(--abu);
+    width: 80%;
+    box-shadow: var(--shadow) 1px 1px 10px;
+    border-radius: 12px;
+    padding: 8px;
+    background-color: var(--sect-bg);
 }
 
 .card h3 {
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .card a {
-  text-decoration: none;
-  color: var(--text);
-  border: 2px solid var(--abu);
-  padding: 6px;
-  border-radius: 6px;
-  margin: auto;
-  display: flex;
-  width: fit-content;
+    text-decoration: none;
+    color: var(--text);
+    border: 2px solid var(--abu);
+    padding: 6px;
+    border-radius: 6px;
+    margin: auto;
+    display: flex;
+    width: fit-content;
 }
 
 .card a:hover {
-  box-shadow: #264D6990 1px 4px 10px;
-  transform: scale(1.1);
+    box-shadow: #264D6990 1px 4px 10px;
+    transform: scale(1.1);
 }
 
 .tempatcard {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .card:hover {
-  transform: scale(1.05);
-  transition: all 0.5s ease;
+    transform: scale(1.05);
+    transition: all 0.5s ease;
 }
 
 .card:hover img {
-  animation: fadeimg 4s ease 0s infinite;
+    animation: fadeimg 4s ease 0s infinite;
 }
 
 aside {
-  background-color: var(--birutua);
-  color: var(--putihsoft);
-  padding: 10px;
+    background-color: var(--birutua);
+    color: var(--putihsoft);
+    padding: 10px;
 }
 
 aside a {
-  align-items: center;
-  position: relative;
-  color: var(--putihsoft);
-  text-decoration: none;
-  display: block;
-  margin-bottom: 30px;
+    align-items: center;
+    position: relative;
+    color: var(--putihsoft);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 30px;
 }
 
 aside img {
-  filter: invert(100%);
-  width: 40px;
-  image-rendering: pixelated;
-  align-items: center;
-  position: relative;
-  vertical-align: middle;
+    filter: invert(100%);
+    width: 40px;
+    image-rendering: pixelated;
+    align-items: center;
+    position: relative;
+    vertical-align: middle;
 }
 
 aside p a {
-  color: var(--putihsoft);
+    color: var(--putihsoft);
 }
-
