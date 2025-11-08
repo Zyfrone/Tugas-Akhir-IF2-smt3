@@ -1,0 +1,337 @@
+@font-face {
+        font-family: mojang;
+        src: url(../fonts/Mojang-Regular.ttf);
+}
+
+
+:root {
+        --hitam: #111618;
+        --abugelap: #2C323A;
+        --putihsoft: #F2F5F8;
+        --birutua: #0a2434;
+        --biru: #13344b;
+        --abu: #96A1B0;
+        --abuterang: #e1e4ec;
+        --abubiasa: #3c414e;
+        --hitamterang: #22292c;
+        --yutublight: url(../img/yutub2.png);
+        --yutubdark: url(../img/yutub2dark.png);
+
+        /* === Default (Light Theme) === */
+        --bg: var(--putihsoft);
+        --text: var(--hitam);
+        --header-bg: var(--birutua);
+        --nav-bg: var(--biru);
+        --sidebar-bg: var(--hitam);
+        --button-bg: var(--biru);
+        --button-text: var(--hitam);
+        --sect-bg: var(--abuterang);
+        --shadow: var(--abugelap);
+        --yutubimg: var(--yutublight);
+        /* === Default (Light Theme) === */
+}
+
+/* ===================== DARK THEME ===================== */
+[data-theme="dark"] {
+        --bg: var(--hitam);
+        --text: var(--putihsoft);
+        --header-bg: var(--birutua);
+        --nav-bg: var(--birutua);
+        --sidebar-bg: var(--hitam);
+        --button-bg: var(--putihsoft);
+        --button-text: var(--hitam);
+        --sect-bg: var(--hitamterang);
+        --shadow: var(--abu) ;
+        --yutubimg: var(--yutubdark);
+}
+/* ===================== DARK THEME ===================== */
+body {
+        font-family: 'mojang';
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background: var(--bg);
+        background-repeat: no-repeat;
+        word-spacing: 5px;
+        color: var(--text);
+        height: 100%;
+        transition: background 0.6s ease, color 0.6s ease;
+}
+
+header {
+        background: var(--header-bg);
+        color: var(--putihsoft);
+        padding: 20px;
+        text-align: left;
+        display: flex;
+        z-index: 2;
+        position: fixed;
+        opacity: 0.9;
+        width: 100%;
+        margin-top: -170px;
+}
+
+header img {
+        width: 90px;
+        margin-right: 15px;
+}
+
+.logo {
+        image-rendering: pixelated;
+}
+
+nav {
+        height: min-content;
+        float: right;
+        margin: auto;
+        margin-right: 28px;
+}
+
+nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+}
+
+nav ul li {
+        position: relative;
+        margin: 4px;
+}
+
+nav ul li a {
+        color: var(--putihsoft);
+        text-decoration: none;
+        font-weight: bold;
+        padding: 8px 12px;
+        display: block;
+}
+
+nav ul li a:hover {
+        background: var(--biru);
+        border-radius: 5px;
+        transition: all 0.3s;
+}
+
+nav ul li ul {
+        display: none;
+        position: absolute;
+        top: 35px;
+        left: 0;
+        background: var(--nav-bg);
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border-radius: 5px;
+}
+
+nav ul li ul li {
+        margin: 0;
+        width: 150px;
+}
+
+nav ul li ul li a {
+        padding: 10px;
+        font-weight: normal;
+}
+
+nav ul li ul li a:hover {
+        background: #FFFFFF;
+        color: #000000;
+}
+
+nav ul li:hover ul {
+        display: block;
+}
+
+details {
+        transition: width 0.01s;
+        width: 50px;
+}
+
+.sidebar {
+        background: var(--sidebar-bg);
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0 0 10px #00000050;
+        color: var(--putihsoft);
+        position: fixed;
+        top: 150px;
+        right: 10px;
+        z-index: 10;
+        transition: all 1s;
+        height: fit-content;
+}
+
+.sidebar summary {
+        cursor: pointer;
+        padding: 10px 18px;
+        font-size: 20px;
+        float: right;
+        text-align: center;
+        list-style: none;
+}
+
+.sidebar summary:hover {
+        transform: scale(1.1);
+}
+
+details[open] {
+        width: 200px;
+        animation: fadeIn 0.6s ease;
+}
+
+/* ===================== TOGGLE THEME BUTTON ===================== */
+.toggletheme {
+        background: var(--putihsoft);
+        color: var(--button-text);
+        border: none;
+        border-radius: 8px;
+        padding: 8px 14px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: 15px;
+        width: 100%;
+        text-align: center;
+        font-family: 'mojang';
+}
+
+.toggletheme:hover {
+        background: var(--abu);
+        color: var(--hitam);
+}
+/* ===================== TOGGLE THEME BUTTON ===================== */
+
+.menu {
+        margin: 60px 0;
+        padding: 0 10px;
+        list-style: none;
+}
+
+.menu li {
+        padding: 10px;
+        margin: 5px 0;
+        text-align: center;
+        background: #2C323A;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.2s;
+}
+
+.menu li:hover {
+        background: #3E98CC;
+}
+
+.menu li img {
+        width: 150px;
+        height: 120px;
+}
+
+.menu li a {
+        text-decoration: none;
+        color: var(--putihsoft);
+}
+
+.minimap {
+        image-rendering: pixelated;
+}
+
+.sect {
+        margin: 90px;
+        margin-top: 170px;
+        border: 3px solid var(--shadow);
+        padding: 20px;
+        border-radius: 18px;
+        background-color: var(--sect-bg);
+        box-shadow: var(--shadow) 1px 1px 10px ;
+        color: var(--text);
+        position: relative;
+}
+
+.paragraf1 img {
+        width: 120px;
+        border-radius: 70px;
+}
+
+.paragraf1 {
+        float: right;
+        position: relative;
+        width: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+}
+
+.sect p {
+        text-align: justify;
+        justify-content: center;
+        align-items: center;
+}
+
+.p1 {
+        margin: 10px;
+}
+
+.buttonwrap {
+        display: inline-flex;
+        margin: auto;
+        width: 100%;
+}
+
+.button {
+        background-color: var(--sect-bg);
+        border: 2px solid var(--shadow);
+        border-radius: 5px;
+        padding: 5px;
+        text-decoration: none;
+        color: var(--text);
+        width: 45%;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        
+}
+
+.button:hover {
+        background-color: var(--button-text);
+        color: var(--putihsoft);
+        border: 3px solid var(--putihsoft);
+        box-shadow: var(--shadow) 0px 1px 8px;
+}
+
+
+aside {
+        background-color: var(--birutua);
+        color: var(--putihsoft);
+        padding: 10px;
+}
+
+aside a {
+        align-items: center;
+        position: relative;
+        color: var(--putihsoft);
+        text-decoration: none;
+        display: block;
+        margin-bottom: 30px;
+}
+
+aside img {
+        filter: invert(100%);
+        width: 40px;
+        image-rendering: pixelated;
+        align-items: center;
+        position: relative;
+        vertical-align: middle;
+}
+
+aside p a {
+        color: var(--putihsoft);
+}
+
+.infotambahan:hover {
+        font-weight: bolder;
+        transition: all ease 0.3s;
+}
