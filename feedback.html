@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RuteJalan | FEEDBACK | Tugas Akhir SMAN 3 Bandung</title>
+  <link rel="stylesheet" href="css/feedback.css">
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="header-wrapper">
+        <header>
+            <a href="#"><img src="img/logo.png" alt="Logo Website" class="logo"></a>
+            <h1>RuteJalan</h1>
+
+        <nav>
+            <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="#">Kuliner</a>
+                <ul>
+                <li><a href="kulinerjkt.html">Kuliner Jakarta</a></li>
+                <li><a href="kulinerbdg.html">Kuliner Bandung</a></li>
+                <li><a href="kulinerbali.html">Kuliner Bali</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Wisata</a>
+                <ul>
+                <li><a href="wisatajkt.html">Wisata Jakarta</a></li>
+                <li><a href="wisatabdg.html">Wisata Bandung</a></li>
+                <li><a href="wisatabali.html">Wisata Bali</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">Tentang</a></li>
+            </ul>
+        </nav>
+        </header>
+  </div>
+
+    <details class="sidebar">
+        <summary>☰</summary>
+        <ul class="menu">
+                <li><a href="map.html"><img src="img/minimap.png" class="minimap"></a></li>
+                <li><a href="jkt.html">Jakarta</a></li>
+                <li><a href="bdg.html">Bandung</a></li>
+                <li><a href="bali.html">Bali</a></li>
+                <button class="toggletheme">Ganti Tema</button>
+        </ul>
+    </details>
+
+    <main>
+        <section class="sect">
+            <h2>Formulir Saran</h2>
+            <p>Punya saran untuk kami? Kami senang mendengar dari Anda!</p>
+            <p>Hubungi tim RuteJalan melalui:</p>
+            <form action="index.html">
+            <table class="tabel">
+                <tr>
+                    <th>Nama Lengkap</th>
+                    <td><input type="text" name="nama" placeholder="Masukan nama Anda..." required></td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td><input type="email" name="email" placeholder="email@address.com..." required></td>
+                </tr>
+                <tr>
+                    <th>Judul Saran</th>
+                    <td><input type="text" name="judul" placeholder="Masukan judul saran..."></td>
+                </tr>
+                <tr class="isisaran">
+                    <th>Isi Saran</th>
+                    <td><textarea name="saran" placeholder="Masukan isi saran..." required></textarea></td>
+                </tr>
+            </table>
+
+            <div class="submit">
+                <button onclick="confirmSubmit()">Kirim</button>
+
+        <script src="js/confirm.js"></script>
+            </div>
+            </form>
+            <p>Terimakasih telah mendukung perjalanan wisata bersama RuteJalan.</p>
+        </section>
+    </main>
+
+    <aside>
+        <h3>Informasi Tambahan</h3>
+        <a class="infotambahan" href="https://www.github.com/Zyfrone/" target="_blank"><img src="img/logogit.png"> Github</a>
+        <a class="infotambahan" href="https://www.instagram.com/zyfrones65" target="_blank"><img src="img/logoig.png"> Instagram</a>
+        <a class="infotambahan" href="https://www.youtube.com/@Zyfrone" target="_blank"><img src="img/logoyt.png"> Youtube</a>
+        <a class="infotambahan" href="kontak.html"> Click Here to Contact Us!</a>
+        <a class="infotambahan" href="feedback.html"> Click Here to Give Us Feedback!</a>
+    </aside>
+
+    <footer>
+        <p>&copy; 2025 RuteJalan Website Tugas Akhir Siswa SMAN 3 Bandung</p>
+    </footer>
+
+    <script src="js/toggledark.js"></script>
+
+</body>
+</html>
