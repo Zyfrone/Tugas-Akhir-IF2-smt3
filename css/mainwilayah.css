@@ -68,9 +68,6 @@ header {
         position: fixed;
         opacity: 0.9;
         width: 100%;
-        
-        display: flex;
-        flex-wrap: wrap;
 }
 
 header img {
@@ -339,9 +336,6 @@ details[open] {
         width: 85vw;
         max-height: 500px;
         margin: auto;
-        
-        display: flex;
-        flex-wrap: wrap;
 }
 
 .card:hover {
@@ -419,3 +413,4 @@ aside p a {
         transition: all ease 0.3s;
 
 }
+
